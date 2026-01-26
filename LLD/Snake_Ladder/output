@@ -1,0 +1,251 @@
+SAI15@LMAC-0Q2TJ37-AP LLD % python3 Snake_Ladder/game.py
+Configuring the board
+Enter board size
+20
+Enter number of snakes
+2
+Enter number of ladders
+1
+Create the snake Board 
+1 snake
+Enter start position:
+9
+Enter end position:
+1
+2 snake
+Enter start position:
+19
+Enter end position:
+1
+Create the Ladder Board 
+1 ladder
+Enter start position:
+1
+Enter end position:
+15
+Board Configuration
+Board Size 20
+Number of Snakes  2
+Number of Ladders  1
+Snakes Details are {9: 1, 19: 1}
+Ladder Details are {1: 15}
+Enter number of players:
+2
+Player ID:
+1
+Player name:
+sne
+Player ID:
+2
+Player name:
+vj
+Enter number of Dices:
+1
+Board Configurations are....
+--------------------------------------
+Board Configuration
+Board Size 20
+Number of Snakes  2
+Number of Ladders  1
+Snakes Details are {9: 1, 19: 1}
+Ladder Details are {1: 15}
+1
+1 sne 0
+2 vj 0
+current Turn sne
+current Turn 0
+Dice number 2
+current Turn vj
+current Turn 0
+Dice number 2
+current Turn sne
+current Turn 2
+Dice number 8
+current Turn vj
+current Turn 2
+Dice number 5
+current Turn sne
+current Turn 8
+Dice number 11
+current Turn vj
+current Turn 5
+Dice number 10
+current Turn sne
+current Turn 11
+Dice number 15
+current Turn vj
+current Turn 10
+Dice number 16
+current Turn sne
+current Turn 15
+Dice number 19
+current Turn vj
+current Turn 16
+Dice number 21
+current Turn sne
+current Turn 1
+Dice number 3
+current Turn vj
+current Turn 16
+Dice number 17
+current Turn sne
+current Turn 3
+Dice number 7
+current Turn vj
+current Turn 17
+Dice number 21
+current Turn sne
+current Turn 7
+Dice number 8
+current Turn vj
+current Turn 17
+Dice number 19
+current Turn sne
+current Turn 8
+Dice number 10
+current Turn vj
+current Turn 1
+Dice number 3
+current Turn sne
+current Turn 10
+Dice number 13
+current Turn vj
+current Turn 3
+Dice number 9
+current Turn sne
+current Turn 13
+Dice number 17
+current Turn vj
+current Turn 1
+Dice number 4
+current Turn sne
+current Turn 17
+Dice number 23
+current Turn vj
+current Turn 4
+Dice number 9
+current Turn sne
+current Turn 17
+Dice number 19
+current Turn vj
+current Turn 1
+Dice number 5
+current Turn sne
+current Turn 1
+Dice number 2
+current Turn vj
+current Turn 5
+Dice number 11
+current Turn sne
+current Turn 2
+Dice number 3
+current Turn vj
+current Turn 11
+Dice number 14
+current Turn sne
+current Turn 3
+Dice number 6
+current Turn vj
+current Turn 14
+Dice number 18
+current Turn sne
+current Turn 6
+Dice number 7
+current Turn vj
+current Turn 18
+Dice number 23
+current Turn sne
+current Turn 7
+Dice number 11
+current Turn vj
+current Turn 18
+Dice number 19
+current Turn sne
+current Turn 11
+Dice number 16
+current Turn vj
+current Turn 1
+Dice number 7
+current Turn sne
+current Turn 16
+Dice number 21
+current Turn vj
+current Turn 7
+Dice number 12
+current Turn sne
+current Turn 16
+Dice number 22
+current Turn vj
+current Turn 12
+Dice number 14
+current Turn sne
+current Turn 16
+Dice number 18
+current Turn vj
+current Turn 14
+Dice number 19
+current Turn sne
+current Turn 18
+Dice number 21
+current Turn vj
+current Turn 1
+Dice number 5
+current Turn sne
+current Turn 18
+Dice number 24
+current Turn vj
+current Turn 5
+Dice number 10
+current Turn sne
+current Turn 18
+Dice number 19
+current Turn vj
+current Turn 10
+Dice number 14
+current Turn sne
+current Turn 1
+Dice number 4
+current Turn vj
+current Turn 14
+Dice number 15
+current Turn sne
+current Turn 4
+Dice number 8
+current Turn vj
+current Turn 15
+Dice number 17
+current Turn sne
+current Turn 8
+Dice number 13
+current Turn vj
+current Turn 17
+Dice number 22
+current Turn sne
+current Turn 13
+Dice number 15
+current Turn vj
+current Turn 17
+Dice number 19
+current Turn sne
+current Turn 15
+Dice number 18
+current Turn vj
+current Turn 1
+Dice number 4
+current Turn sne
+current Turn 18
+Dice number 24
+current Turn vj
+current Turn 4
+Dice number 6
+current Turn sne
+current Turn 18
+Dice number 22
+current Turn vj
+current Turn 6
+Dice number 8
+current Turn sne
+current Turn 18
+Dice number 20
+sne Won the game
+SAI15@LMAC-0Q2TJ37-AP LLD % 
