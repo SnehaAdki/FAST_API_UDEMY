@@ -7,18 +7,29 @@ class Board():
         self.snakes = {}
         self.ladders = {}
         self.size_baord = 0
+        self.max_tries_errors = 5
 
     def configure_board(self):
-        print("Configuring the board")
-        print("Enter board size")
-        self.size_baord = int(input())
-        print("Enter number of snakes")
-        self.num_of_snakes = int(input())
-        print("Enter number of ladders")
-        self.num_of_ladders = int(input())
-        self.create_snakes()
-        self.create_ladders()
-        self.show_board_details()
+        for i in range(0,self.max_tries_errors):
+            try:
+                print("Configuring the board")
+                print("Enter board size")
+                self.size_baord = int(input())
+                print("Enter number of snakes")
+                self.num_of_snakes = int(input())
+                print("Enter number of ladders")
+                self.num_of_ladders = int(input())
+                self.create_snakes()
+                self.create_ladders()
+                self.show_board_details()
+                break
+            except Exception as ex:
+                print("Error is enter valid input")
+                print(ex)
+                continue
+            finally:
+                print("Completed!...")
+
 
     def show_board_details(self):
         print("Board Configuration")
@@ -31,20 +42,37 @@ class Board():
 
     def create_snakes(self):
         print("Create the snake Board ")
-        for i in range(1,self.num_of_snakes+1):
-            p1 = Position()
-            print(f"{i} snake" )
-            p1.set_start_end_pos()
-            self.snakes[p1.start_position] = p1.end_position
-        
+        for i in range(0,self.max_tries_errors):
+            try:
+                for i in range(0,self.num_of_snakes):
+                    p1 = Position()
+                    print(f"{i+1} snake" )
+                    p1.set_start_end_pos()
+                    self.snakes[p1.start_position] = p1.end_position
+            except Exception as ex:
+                print("Error is enter valid input")
+                print(ex)
+                continue
+            finally:
+                print("Completed Snake Cretaion!...")
+            
+            
+
         
     def create_ladders(self):
         print("Create the Ladder Board ")
-        for i in range(1,self.num_of_ladders+1):
-            p1 = Position()
-            print(f"{i} ladder" )
-            p1.set_start_end_pos()
-            self.ladders[p1.start_position] = p1.end_position
-
-
+        for i in range(0,self.max_tries_errors):
+            try:
+                for i in range(0,self.num_of_ladders):
+                    p1 = Position()
+                    print(f"{i+1} ladder" )
+                    p1.set_start_end_pos()
+                    self.ladders[p1.start_position] = p1.end_position
+            except Exception as ex:
+                print("Error is enter valid input")
+                print(ex)
+                continue
+            finally:
+                print("Completed Ladder Cretaion!...")
+            
 
