@@ -68,10 +68,38 @@ async def update_user_password(user: user_dependency,
     if user is None:
         return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Unauthorized")
     user_details = db.query(User).filter(User.id == user.get('id')).first()
-    breakpoint()
     if bycrypt_context.verify(new_password_req.password,user_details.hashed_password):
         new_pass = bycrypt_context.hash(new_password_req.new_password)
         user_details.hashed_password = new_pass
         db.commit()
         return HTTPException(status_code=status.HTTP_200_OK,detail="Password Changed")
     raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Current Password Incorrect")
+
+
+
+# Assignment
+#
+# Here is your opportunity to keep learning!
+#
+# Let's enhance our application again using Alembic! :)
+#
+#
+#
+# Add a phone number field as required when we create a new user within our auth.py file
+#
+# Create a new @put request in our users.py file that allows a user to update their phone_number
+#
+# Solution in next video
+
+
+@router.put("/update_phone_number/{phone_number}",status_code=status.HTTP_204_NO_CONTENT)
+async def update_phone_number(db: db_dependency ,
+                              user: user_dependency,
+                              phone_number:str):
+    if user is None:
+        return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,detail="Unauthorized")
+    user_details = db.query(User).filter(User.id == user.get('id')).first()
+    user_details.phone_number = phone_number
+    db.add(user_details)
+    db.commit()
+    return user_details
