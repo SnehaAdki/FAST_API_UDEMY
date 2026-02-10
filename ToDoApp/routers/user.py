@@ -9,8 +9,6 @@
 # get_user: this endpoint should return all information about the user that is currently logged in.
 #
 # change_password: this endpoint should allow a user to change their current password.
-
-
 from email.policy import default
 
 from fastapi import Depends, APIRouter, HTTPException, Path
@@ -102,4 +100,3 @@ async def update_phone_number(db: db_dependency ,
     user_details.phone_number = phone_number
     db.add(user_details)
     db.commit()
-    return user_details
