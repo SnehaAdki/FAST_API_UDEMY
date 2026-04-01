@@ -12,12 +12,12 @@
 from email.policy import default
 
 from fastapi import Depends, APIRouter, HTTPException, Path
-from models import Todos
-from database import sessionLocal
+from ..models import Todos
+from ..database import sessionLocal
 from typing import Annotated
 from sqlalchemy.orm import Session
 from starlette import status
-from models import User
+from ..models import User
 from pydantic import BaseModel ,Field
 from passlib.context import  CryptContext
 

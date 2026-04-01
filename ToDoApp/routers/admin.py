@@ -1,8 +1,8 @@
 from email.policy import default
 
 from fastapi import Depends, APIRouter, HTTPException, Path
-from models import Todos
-from database import sessionLocal,engine
+from ..models import Todos
+from ..database import sessionLocal,engine
 from typing import Annotated
 from sqlalchemy.orm import Session
 from starlette import status
